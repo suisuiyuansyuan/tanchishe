@@ -1,0 +1,83 @@
+.content {
+    height: 640px;
+    width: 640px;
+    margin: 100px auto;
+    position: relative;
+}
+
+.btn {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.btn button {
+    background: none;
+    border: none;
+    background-size: 100% 100%;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.startBtn button {
+    width: 250px;
+    height: 90px;
+    background-image: url("../images/开始游戏.png");
+    margin-left: -125px;
+    margin-top: -45px;
+    /* display: none; */
+}
+
+.pauseBtn {
+    display: none;
+}
+
+.pauseBtn button {
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/暂停-停止32.png");
+    margin-left: -50px;
+    margin-top: -50px;
+}
+
+
+/* snakeWrap */
+
+#snakeWrap {
+    width: 600px;
+    height: 600px;
+    background: #225675;
+    border: 20px solid #7dd9ff;
+    position: relative;
+}
+
+
+/* #snakeWrap div {
+    height: 20px;
+    width: 20px;
+} */
+
+.snakeHead {
+    background-image: url("../images/蛇头.png");
+    background-size: cover;
+    /* display: none; */
+}
+
+.snakeBody {
+    background-color: #9ddbb1;
+    border-radius: 50%;
+    /* display: none; */
+}
+
+.food {
+    background-image: url("../images/苹果.png");
+    background-size: cover;
+    /* display: none; */
+}
